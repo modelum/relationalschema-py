@@ -140,7 +140,7 @@ class Table(NamedElement):
 class Column(NamedElement):
 
     datatype = EAttribute(eType=EString, unique=True, derived=False, changeable=True)
-    size = EAttribute(eType=EInt, unique=True, derived=False, changeable=True, default_value=1)
+    size = EAttribute(eType=EInt, unique=True, derived=False, changeable=True, default_value=0)
     nullable = EAttribute(eType=EBoolean, unique=True, derived=False,
                           changeable=True, default_value=False)
     defaultvalue = EAttribute(eType=EString, unique=True, derived=False,
